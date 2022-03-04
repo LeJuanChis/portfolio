@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+.footer{
+    background-color: darken(v.$color_secundario, 12%);
+    @include m.tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    border-top: 3px solid v.$color_terciario;
+    text-align: center;
+}
+
+.socialMedia-container{
+    
+    h4{
+        font-size: 2rem;
+        
+    }
+
+    padding: 1rem 1rem .5rem 1rem;
+
+    .socialMedia{
+        display: flex;
+        justify-content:space-around;
+    }
+
+}
+
+.socialMedia{
+
+    a{
+        
+        width: 60px;
+        height: 60px;
+        color: v.$color_terciario;
+        display: flex;
+        justify-content:center;
+        background-color: v.$negro;
+        align-items: center;
+        border-radius: 15%;
+
+    }
+    
+}

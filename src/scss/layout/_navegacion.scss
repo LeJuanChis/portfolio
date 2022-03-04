@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+
+.derecha{
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height 0.5s linear;
+
+    @include m.tablet {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.mobile-menu{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    @include m.tablet {
+        display: none;
+        visibility: hidden;
+    }
+
+    img{
+        width: 5rem;
+
+    }
+
+    
+}
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

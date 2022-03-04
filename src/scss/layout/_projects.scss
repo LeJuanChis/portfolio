@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+.proyectos-contenedor{
+    background-color: lighten(v.$color_principal, 7%);
+    padding: 2rem 4rem;
+    box-shadow: 0 5px 200px rgba(88, 88, 88, 0.5);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+} 
+
+.proyecto{
+    background-color: rgba(80, 80, 80, 0.1);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    padding:  .5rem 2rem 2rem 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 8rem;
+    padding: 2rem 8rem;
+        column-gap: 2rem;
+        
+        align-items: center;
+        &::nth-child(odd){
+            flex-direction: column-reverse;
+        }
+    }
+    
+
+}
+
+.proyecto-info{
+    h4{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    p{
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: .2rem;
+    }
+
+
+}
+
+.proyecto-img{
+    margin-top: 4rem;
+
+    @include m.tablet {
+        margin-top: 0;
+    }
+}

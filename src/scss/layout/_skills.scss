@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+.conocimientos{
+
+    @include m.tablet {
+        padding-top: 5rem;
+    }
+    padding-top: 15rem;
+    p{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+
+
+.skills-container{
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.card{ 
+    position: relative;
+    max-width: 30rem;
+    height: 20rem;
+    background-color: lighten(v.$color_principal, 10);
+    margin: 3rem 1rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 200px rgba(88, 88, 88, 0.5);
+    transition: 0.3s ease-in-out;
+    color: v.$negro;
+    border-radius: 10px;
+
+    @include m.tablet {
+        max-width: 40rem;
+    }
+    
+    &:hover{
+        height: 60rem;
+        cursor: pointer;
+    }
+ 
+
+    .card-img{
+        position: relative;
+        width: 20rem;
+        height: 15rem;
+        top: -7rem;
+        left: 6rem;
+        
+        @include m.tablet {
+            left: 10rem;
+        }
+
+        img, picture{
+            max-width: 90%;
+            max-height: 22rem; 
+        }
+    }
+
+    .card-content{
+        position: relative;
+        margin-top: -10rem;
+        padding: .5rem 1rem;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        color: v.$blanco;
+        h3{
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: 2px;
+        }    
+
+        @include m.tablet {
+            p{
+                line-height: 3rem;
+                letter-spacing: 3px;
+            }
+            
+        }
+    }
+
+    &:hover .card-content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -4rem;
+        transition-delay: 0.3s;
+        
+    }
+}

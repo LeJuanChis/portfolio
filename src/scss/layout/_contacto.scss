@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+.contacto{
+    width: 80%;
+    margin: 0 auto;
+}
+
+legend{
+    font-size: 3rem;
+}
+
+label{
+    font-size: 1.7rem;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+input:not([type="submit"]), 
+textarea{
+    font-size: 1.5rem;
+    width: 100%;
+    color: v.$negro;
+    outline: none;
+    border: 1px solid v.$color_principal;
+    padding: .8rem;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+textarea{
+
+    outline: none;
+    height: 20rem;
+}
+
+input[type="submit"]{
+    border: 1px solid v.$color_terciario;
+    margin: 2rem 0;
+}
+
+.enviar{
+    display: flex; 
+    justify-content: flex-end;
+}

@@ -1,0 +1,5 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+.btn-negro{
+    @include m.botones(v.$blanco, v.$color_principal, inline-block); 
+}
