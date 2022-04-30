@@ -81,9 +81,9 @@
             <a href="#projects" class="animate__animated animate__zoomInDown"
               >Proyectos</a
             >
-            <a href="#contact" class="animate__animated animate__zoomInDown"
+            <!-- <a href="#contact" class="animate__animated animate__zoomInDown"
               >Contacto</a
-            >
+            > -->
           </nav>
         </div>
       </div>
@@ -369,9 +369,15 @@
               utiliza el Local Storage como almacenamiento. Solo es una practica
               de tecnologias basicas del Front-end
             </p>
+            <div class="proyecto-opciones">
             <a class="btn-negro" href="https://taskadminjcosorio.netlify.app/"
-              >Ver proyecto</a
+              >Proyecto</a
             >
+
+            <a class="btn-negro" href="https://taskadminjcosorio.netlify.app/"
+              >Repositorio</a
+            >
+          </div>
           </div>
 
           <div class="proyecto-img">
@@ -393,14 +399,13 @@
 
         <div class="proyecto">
           <div class="proyecto-info">
-            <h4>Admistrador de tareas</h4>
+            <h4>Portafolio</h4>
             <p>
-              Es un administrador de tareas muy basico, hecho en Javascript y
-              utiliza el Local Storage como almacenamiento. Solo es una practica
-              de tecnologias basicas del Front-end
+              Este portafolio fue construido desde cero con html, css, sass, gulp y javascript. Mi idea de no usar una plantilla para hacerlo fue todo lo que aprendí haciendo este proyecto
+
             </p>
-            <a class="btn-negro" href="https://taskadminjcosorio.netlify.app/"
-              >Ver proyecto</a
+            <a class="btn-negro" href="https://github.com/LeJuanChis/portfolio"
+              >Repositorio</a
             >
           </div>
 
@@ -408,12 +413,41 @@
             <picture>
               <source
                 class="img"
-                srcset="build/img/taskProyect.webp"
+                srcset="build/img/portafolioImage.webp"
                 type="image/webp"
               />
               <img
                 class="img"
-                src="build/img/taskProyect.jpeg"
+                src="build/img/portafolioImage.jpeg"
+                alt="Imagen del portafolio"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="proyecto-info">
+            <h4>Scouting (Aún en desarrollo)</h4>
+            <p>
+              Proyecto hecho con el fin de llevar un control y seguimiento a las actividades del Grupo Scout Tercero Guacirí (Al cual pertenezco).
+              Utiliza principalmente php (POO y MVC), mysql, sass, css, html y JavaScript
+            </p>
+            <a class="btn-negro" href="https://github.com/LeJuanChis/scouting"
+              >Ver repositorio</a
+            >
+          </div>
+
+          <div class="proyecto-img">
+            <picture>
+              <source
+                class="img"
+                srcset="build/img/scoutingImage.webp"
+                type="image/webp"
+              />
+              <img
+                class="img"
+                src="build/img/scoutingImage.jpeg"
                 alt="Imagen del administrador de tareas"
                 loading="lazy"
               />
@@ -423,14 +457,14 @@
 
         <div class="proyecto">
           <div class="proyecto-info">
-            <h4>Admistrador de tareas</h4>
+            <h4>WEOS</h4>
             <p>
-              Es un administrador de tareas muy basico, hecho en Javascript y
-              utiliza el Local Storage como almacenamiento. Solo es una practica
-              de tecnologias basicas del Front-end
+              Software de organización de eventos mundiales o WEOS por sus siglas en ingles. Fue mi proyecto de 
+              grado hecho con Java, JavaScript, css, jsp y mysql. Se trata de un software de personalizacion y cotizacion de 
+              eventos sociales a la medida. 
             </p>
-            <a class="btn-negro" href="https://taskadminjcosorio.netlify.app/"
-              >Ver proyecto</a
+            <a class="btn-negro" href="https://github.com/LeJuanChis/WEOS"
+              >Ver repositorio</a
             >
           </div>
 
@@ -438,12 +472,12 @@
             <picture>
               <source
                 class="img"
-                srcset="build/img/taskProyect.webp"
+                srcset="build/img/weos.webp"
                 type="image/webp"
               />
               <img
                 class="img"
-                src="build/img/taskProyect.jpeg"
+                src="build/img/weos.jpeg"
                 alt="Imagen del administrador de tareas"
                 loading="lazy"
               />
@@ -454,10 +488,49 @@
     </section>
     <!--Finalizamos la seccion de proyectos-->
 
-    <div class="contenedor contenido-contacto" id="contact">
+    <!--Proyectos hechos en cursos-->
+    <section class="contenedor" id="projects">
+      <h2>Ademas de esto, he estado en algunos cursos donde he hecho proyectos interesantes</h2>
+      <div class="proyectos-contenedor">
+        <div class="proyecto">
+          <div class="proyecto-info">
+            <h4>Administrador de bienes raices</h4>
+            <p>
+              Una pagina de bienes raices hecha con php, mysql, guls, sass, html, css y javascript. 
+              Fue hecha como un proyecto de aprendizaje por parte del instructor Juan Pablo de la Torre en el 
+              curso <a href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</a> 
+            </p>
+            <a class="btn-negro" href="https://github.com/LeJuanChis/bienesRaices"
+              >Ver proyecto</a
+            >
+          </div>
+
+          <div class="proyecto-img">
+            <picture>
+              <source
+                class="img"
+                srcset="build/img/bienesRaices.webp"
+                type="image/webp"
+              />
+              <img
+                class="img"
+                src="build/img/bienesRaices.jpeg"
+                alt="Imagen del administrador de tareas"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+    <!--Finalizamos la seccion de proyectos-->
+
+    <!-- <div class="contenedor contenido-contacto" id="contact">
       <div class="contacto">
-        <h2>Comunicate conmigo para hacer negocios :)</h2>
-        <form method="POST" class="form">
+        <h2>Comunicate conmigo :)</h2>
+        <form method="POST" class="form" action="mail.php">
           <fieldset>
             <legend>Contactame</legend>
             <label for="nombre">Tu nombre o el de tu empresa</label>
@@ -473,6 +546,8 @@
 
             <label for="correo">Tu correo</label>
             <input
+              required
+              class="correo"
               type="email"
               name="correo"
               id="correo"
@@ -481,14 +556,18 @@
             />
 
             <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
+            <textarea name="mensaje" id="mensaje" class="mensaje" required></textarea>
+
+            <div class="errores">
+
+            </div>
           </fieldset>
           <div class="enviar">
             <input type="submit" value="Enviar" class="btn-negro" />
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <footer class="footer">
       <p>Hecho con <span>♥</span> por Juan Carlos Osorio &copy;</p>
@@ -523,7 +602,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="build/js/particles.min.js"></script>
     <script src="build/js/app.js"></script>
     <script src="build/js/main.js"></script>

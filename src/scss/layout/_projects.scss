@@ -15,14 +15,16 @@
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border-radius: 10px;
-    padding:  .5rem 2rem 2rem 2rem;
+    padding: .5rem;
     text-align: center;
     margin-bottom: 4rem;
+    overflow: hidden;
+    box-shadow: -3px 4px 20px 8px v.$color_principal;
     @include m.tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 2rem 8rem;
-    padding: 2rem 8rem;
+        padding: 2rem 8rem;
         column-gap: 2rem;
         
         align-items: center;
@@ -36,15 +38,26 @@
 
 .proyecto-info{
     h4{
-        font-size: 3.5rem;
+        font-size: 3rem; 
         margin-bottom: 0;
         text-transform: uppercase;
     }
 
     p{
+        text-align: left;
         font-size: 1.5rem;
         line-height: 3rem;
         letter-spacing: .2rem;
+    }
+
+    padding: 0 1rem;
+
+    @include m.telefono {
+        padding: 0 4rem;
+    }
+
+    @include m.tablet {
+        padding: 0rem;
     }
 
 
@@ -55,5 +68,13 @@
 
     @include m.tablet {
         margin-top: 0;
+    }
+}
+
+.proyecto-opciones{
+    display: flex;
+    justify-content: space-around;
+    a{
+        padding: .9rem;
     }
 }

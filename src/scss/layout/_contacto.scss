@@ -46,3 +46,12 @@ input[type="submit"]{
     display: flex; 
     justify-content: flex-end;
 }
+
+.errores{
+    text-align: center;
+}
+
+.swal-modal {
+    background-color: v.$color_terciario;
+    color:  v.$blanco; 
+  }

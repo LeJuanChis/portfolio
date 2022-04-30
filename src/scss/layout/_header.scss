@@ -11,6 +11,15 @@
     text-align: center;
 
     border-bottom: 3px solid v.$color_terciario;
+
+    &.fijo{
+        top: 0;
+        height: 10rem;
+        position: fixed;
+        width: 100%;
+        box-shadow: .9rem .5rem .9rem #333;
+        z-index: 1000;
+    }
 }
 
 .header-nav{
